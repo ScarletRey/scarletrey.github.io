@@ -2334,7 +2334,7 @@ img.mfp-img {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("/pict/upholstery-cleaningnassau.png");
+  background-image: url("../../pict/upholstery-cleaningnassau.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3225,7 +3225,7 @@ img.mfp-img {
   display: inline-block;
   top: 25%;
   right: 3px;
-  background-image: url("/pict/ChevronRight.png");
+  background-image: url("../../pict/ChevronRight.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
@@ -3235,7 +3235,7 @@ img.mfp-img {
   display: inline-block;
   top: 25%;
   left: 3px;
-  background-image: url("/pict/ChevronLeft.png");
+  background-image: url("../../pict/ChevronLeft.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
@@ -3618,7 +3618,7 @@ img.mfp-img {
   border: none;
   background: transparent;
   margin: 15px;
-  background: url("/pict/ChevronLeftW.png") no-repeat;
+  background: url("../../pict/ChevronLeftW.png") no-repeat;
   width: 25px;
   height: 43px;
 }
@@ -3631,7 +3631,7 @@ img.mfp-img {
   border: none;
   background: transparent;
   margin: 15px;
-  background: url("/pict/ChevronRightW.png") no-repeat;
+  background: url("../../pict/ChevronRightW.png") no-repeat;
   width: 25px;
   height: 43px;
 }
@@ -3838,7 +3838,7 @@ img.mfp-img {
   border: none;
   background: transparent;
   margin: 15px;
-  background: url("/pict/ChevronLeftW.png") no-repeat;
+  background: url("../../pict/ChevronLeftW.png") no-repeat;
   width: 25px;
   height: 43px;
 }
@@ -3851,7 +3851,7 @@ img.mfp-img {
   border: none;
   background: transparent;
   margin: 15px;
-  background: url("/pict/ChevronRightW.png") no-repeat;
+  background: url("../../pict/ChevronRightW.png") no-repeat;
   width: 25px;
   height: 43px;
 }
@@ -4915,7 +4915,7 @@ img.mfp-img {
   width: 26px;
   height: 40px;
   margin-top: -20px;
-  background-image: url("/pict/ChevronLeft.png");
+  background-image: url("../../pict/ChevronLeft.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -4932,7 +4932,7 @@ img.mfp-img {
   width: 26px;
   height: 40px;
   margin-top: -20px;
-  background-image: url("/pict/ChevronRight.png");
+  background-image: url("../../pict/ChevronRight.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -5373,7 +5373,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: linear-gradient(to right, rgba(37,34,37,0.8), rgba(37,34,37,0.8), transparent, transparent), url("/pict/Divan-kalkuyator.jpg");
+  background-image: linear-gradient(to right, rgba(37,34,37,0.8), rgba(37,34,37,0.8), transparent, transparent), url("../../pict/Divan-kalkuyator.jpg");
   background-position: center center;
   background-size: cover;
   z-index: 1;
@@ -5524,7 +5524,7 @@ img.mfp-img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url("/pict/arrow_down.png");
+  background-image: url("../../pict/arrow_down.png");
   background-repeat: no-repeat;
   background-position: 97%;
   background-size: 20px;
@@ -6226,7 +6226,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: url("/pict/Konsultation.jpg");
+  background-image: url("../../pict/Konsultation.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -6415,7 +6415,7 @@ img.mfp-img {
 .ourInputs .wrapper-ourInputs {
   max-width: 1920px;
   width: 100%;
-  background-image: url("/pict/ShintoCloth1.jpg");
+  background-image: url("../../pict/ShintoCloth1.jpg");
   background-position: center;
   background-size: cover;
   margin: 0 auto;
@@ -6487,7 +6487,7 @@ img.mfp-img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url("/pict/arrow_down.png");
+  background-image: url("../../pict/arrow_down.png");
   background-repeat: no-repeat;
   background-position: 97%;
   background-size: 20px;
@@ -6922,7 +6922,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: url("/pict/upholstery.jpg");
+  background-image: url("../../pict/upholstery.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -6968,7 +6968,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: url("/pict/chair.jpg");
+  background-image: url("../../pict/chair.jpg");
   background-size: cover;
   background-position: center;
   text-align: right;
@@ -7093,7 +7093,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: url("/pict/Hands.jpg");
+  background-image: url("../../pict/Hands.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -7183,7 +7183,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: url("/pict/Hands.jpg");
+  background-image: url("../../pict/Hands.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -7270,7 +7270,7 @@ img.mfp-img {
   display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url("/pict/arrow_sliderLeft.png");
+  background-image: url("../../pict/arrow_sliderLeft.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
@@ -7296,7 +7296,7 @@ img.mfp-img {
   display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url("/pict/arrow_sliderRight.png");
+  background-image: url("../../pict/arrow_sliderRight.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
@@ -7449,7 +7449,7 @@ img.mfp-img {
   display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url("/pict/ChevronLeft.png");
+  background-image: url("../../pict/ChevronLeft.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
@@ -7475,7 +7475,7 @@ img.mfp-img {
   display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url("/pict/ChevronRight.png");
+  background-image: url("../../pict/ChevronRight.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
@@ -8674,7 +8674,7 @@ img.mfp-img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background: url("/pict/2.jpg") center;
+  background: url("../../pict/2.jpg") center;
   background-size: cover;
   text-align: right;
 }
