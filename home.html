@@ -23,332 +23,363 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<header>
 			<div class="wrapper">
 				<a href="/" class="logo">
-					<span>D</span>
-					<span>M</span>
-					<span>C</span>
+					<img src="img/logo.png" alt="">
 				</a>
-				<form class="search">
-					<div class="search-input">
-						<input type="text" placeholder="Пошук" class="search-text" />
-						<button class="search-submit">
-							<svg class="search-ico"><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-						</button>
-					</div>
-				</form>
-				<div class="contacts">
-					<div class="contacts-item">
-						<svg class="contacts-ico"><use xlink:href="assets/images/icon.svg#icon_mail"></use></svg>
-						<a href="mailto:contact@medklinika.com ">contact@medklinika.com </a>
-					</div>
-					<div class="contacts-item">
-						<svg class="contacts-ico"><use xlink:href="assets/images/icon.svg#icon_phone-call"></use></svg>
-						<a href="tel:+8(800)775-59-90">+ 8 (800) 775-59-90</a>
-					</div>
-					<div class="contacts-item">
-						<svg class="contacts-ico"><use xlink:href="assets/images/icon.svg#icon_woman"></use></svg>
-					</div>
+				<nav class="navigation js-nav">
+					<ul>
+						<li class="is-active">
+							<a href="#">главная</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">бренды</a>
+						</li>
+						<li>
+							<a href="#">новости</a>
+						</li>
+						<li>
+							<a href="#">вакансии</a>
+						</li>
+						<li>
+							<a href="#">контакты</a>
+						</li>
+						<li class="lang">
+							<a href="#" class="is-active">RU </a>
+							<span class="divider">|</span>
+							<a href="#">EN</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
 		</header>
-		<nav class="navigation">
-			<ul class="wrapper js-nav">
-				<li class="is-active">
-					<a href="">Главная</a>
-				</li>
-				<li>
-					<a href="">О Лаборатории</a>
-				</li>
-				<li>
-					<a href="">Анализы и цены</a>
-				</li>
-				<li>
-					<a href="">Пациентам</a>
-				</li>
-				<li>
-					<a href="">Врачам</a>
-				</li>
-				<li>
-					<a href="">Результаты онлайн</a>
-				</li>
-				<li>
-					<a href="">Контакты</a>
-				</li>
-			</ul>
-			<div class="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-		<section class="top-carousel-wrapper">
-			<div class="top-carousel owl-carousel">
-				<div style="background-image: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0) 99%), url(img/slide1.jpg);"
-				 class="slide">
-					<div class="wrapper">
-						<div class="title">Ви миєте вибір</div>
-						<div class="text">Забудьте про довге
-							<br/>очікування результатів. </div>
-						<a href="#" class="link">Подробнее >></a>
-					</div>
-				</div>
-				<div style="background-image: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0) 99%), url(img/slide1.jpg);"
-				 class="slide">
-					<div class="wrapper">
-						<div class="title">Ви миєте вибір</div>
-						<div class="text">Забудьте про довге
-							<br/>очікування результатів. </div>
-						<a href="#" class="link">Подробнее >></a>
-					</div>
-				</div>
-				<div style="background-image: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0) 99%), url(img/slide1.jpg);"
-				 class="slide">
-					<div class="wrapper">
-						<div class="title">Ви миєте вибір</div>
-						<div class="text">Забудьте про довге
-							<br/>очікування результатів. </div>
-						<a href="#" class="link">Подробнее >></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="most-service">
-			<div class="wrapper">
-				<div class="most-service-item">
+		<section>
+			<div class="header-carousel owl-carousel">
+				<div style="background-image: url('img/hbg1.jpg')" class="slide">
 					<div class="img">
-						<svg class="ico"><use xlink:href="assets/images/icon.svg#icon_download"></use></svg>
+						<img src="img/logotea.png" alt="">
 					</div>
 					<div class="text">
-						<p>Ознайомитися з прайс-листом</p>
-						<a href="#" class="link">Подробнее >></a>
+						<p>РАБОТАЕМ С 1995 ГОДА</p>
+						<p>оптовые поставки брендовой продукции</p>
+						<p>на выгодных условиях</p>
 					</div>
 				</div>
-				<div class="most-service-item">
+				<div style="background-image: url('img/hbg1.jpg')" class="slide">
 					<div class="img">
-						<svg class="ico"><use xlink:href="assets/images/icon.svg#icon_syringe"></use></svg>
+						<img src="img/logotea.png" alt="">
 					</div>
 					<div class="text">
-						<p>Результаты онлайн</p>
-						<a href="#" class="link">Подробнее >></a>
+						<p>РАБОТАЕМ С 1995 ГОДА ломаем верстку и придумываем как быть</p>
+						<p>оптовые поставки брендовой продукции</p>
+						<p>на выгодных условиях и немного тут сломаем для пущей уверенности</p>
 					</div>
 				</div>
-				<div class="most-service-item">
-					<div class="img">
-						<svg class="ico"><use xlink:href="assets/images/icon.svg#icon_medical-result"></use></svg>
-					</div>
-					<div class="text">
-						<p>Записатися на прийом</p>
-						<a href="#" class="link">Подробнее >></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section style="background-image: url(img/callback.jpg)" class="callback-block">
-			<div class="wrapper">
-				<div class="text">У нашій лабораторії представлені всі основні медичні напрямки.
-					<br>Ми з радістю допоможемо вам!&nbsp;</div>
-				<a href="#" class="callback-btn">Зворотний дзвінок</a>
 			</div>
 		</section>
 		<section class="home-about">
 			<div class="wrapper">
 				<div class="col">
-					<div class="title">О компании</div>
+					<h2 class="main-title">О НАС
+						<img src="img/ico1.png" alt="">
+					</h2>
 					<div class="text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum at, possimus unde laboriosam, delectus nobis officiis
-							asperiores vero dolorem, molestias fuga nulla. Odit culpa, aliquam asperiores animi ut, enim sunt sit tempora esse
-							inventore pariatur, impedit, natus. Excepturi nemo aperiam labore dicta et qui incidunt accusamus, tempore aliquid,
-							accusantium fuga dolor optio unde mollitia modi. Sapiente ducimus et odit culpa suscipit, architecto, laudantium optio!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum at, possimus unde laboriosam, delectus nobis officiis
-							asperiores vero dolorem, molestias fuga nulla. Odit culpa, aliquam asperiores animi ut, enim sunt sit tempora esse
-							inventore pariatur, impedit, natus. Excepturi nemo aperiam labore dicta et qui incidunt accusamus, tempore aliquid,
-							accusantium fuga dolor optio unde mollitia modi. Sapiente ducimus et odit culpa suscipit, architecto, laudantium optio!</p>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, hic possimus error ducimus, dolore assumenda. Praesentium
+							eveniet inventore, expedita! Recusandae error qui quos placeat, officiis velit ullam voluptatem officia magni ut natus
+							dicta est beatae consectetur sunt sapiente accusantium dolorem asperiores quam, eveniet, ratione ab. Sint aliquid
+							id placeat veniam nulla quia, nostrum velit repellat. Dolores error illo omnis aliquid illum maiores assumenda quaerat!</p>
 					</div>
-					<a href="#" class="link">Узнать больше</a>
 				</div>
 				<div class="col">
-					<div class="title">Наши сотрудники</div>
-					<div class="home-personal">
-						<div class="home-personal-item">
-							<img src="img/pers1.jpg" alt="" />
-							<div class="name">Андрей Миронов</div>
-							<div class="prof">Психотерапевт</div>
-						</div>
-						<div class="home-personal-item">
-							<img src="img/pers1.jpg" alt="" />
-							<div class="name">Андрей Миронов</div>
-							<div class="prof">Психотерапевт</div>
-						</div>
-						<div class="home-personal-item">
-							<img src="img/pers1.jpg" alt="" />
-							<div class="name">Андрей Миронов</div>
-							<div class="prof">Психотерапевт</div>
-						</div>
-					</div>
-					<a href="#" class="link">Все сотрудники</a>
-				</div>
-			</div>
-		</section>
-		<section class="home-why">
-			<div class="wrapper">
-				<div class="home-title">Почему нашу лабораторию выбирают?</div>
-				<div class="wu-block">
-					<div class="wu-item">
-						<img src="./img/wu-1.jpg" alt="" />
-						<div class="line"></div>
-						<p class="text">Безопасность</p>
-					</div>
-					<div class="wu-item">
-						<img src="./img/wu-2.jpg" alt="" />
-						<div class="line"></div>
-						<p class="text">Специалисты с многолетним опытом</p>
-					</div>
-					<div class="wu-item">
-						<img src="./img/wu-3.jpg" alt="" />
-						<div class="line"></div>
-						<p class="text">Точность диагностики</p>
-					</div>
-					<div class="wu-item">
-						<img src="./img/wu-4.jpg" alt="" />
-						<div class="line"></div>
-						<p class="text">Оснащение клиники современным импортным оборудованием</p>
-					</div>
-					<div class="wu-item">
-						<img src="./img/wu-5.jpg" alt="" />
-						<div class="line"></div>
-						<p class="text">Собственная лаборатория. Более 3000 видов анализов </p>
-					</div>
-					<div class="wu-item">
-						<img src="./img/wu-6.jpg" alt="" />
-						<div class="line"></div>
-						<p class="text">Первоклассный сервис</p>
-					</div>
-				</div>
-			</div>
-			<div class="popular-carousel owl-carousel">
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="./img/pop1.jpg" alt="" />
-					<div class="shadow"></div>
-					<div class="text">
-						<div class="line"></div>
-						<a href="#" class="link">Исследование</a>
+					<div class="img">
+						<img src="img/ai1.jpg" alt="">
+						<img src="img/reds.png" alt="" class="ang">
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<section class="home-brands">
 			<div class="wrapper">
-				<a href="/" class="logo">
-					<span>D</span>
-					<span>M</span>
-					<span>C</span>
-				</a>
-				<div class="footer-info">
-					<p>© 2017, КП "Дарницький медичний центр"
-						<br/>клініко-діагностична лабораторія
-						<br/>Адреса: м.Київ, вул. Харківське шосе, 121</p>
+				<h2 class="main-title">бренды
+					<img src="img/ico2.png" alt="">
+				</h2>
+			</div>
+			<div class="brands-carousel owl-carousel">
+				<div class="slide">
+					<div class="img">
+						<img src="img/logotea.png" alt="">
+					</div>
+					<div style="background-image: url('img/tea.jpg')" class="under">
+						<div class="title">чай mahmood</div>
+						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
+							во всей своей деятельности с первого дня своего основания.</div>
+					</div>
 				</div>
-				<nav class="navigation">
-					<ul class="wrapper">
-						<li class="is-active">
-							<a href="">Главная</a>
-						</li>
-						<li>
-							<a href="">О Лаборатории</a>
-						</li>
-						<li>
-							<a href="">Анализы и цены</a>
-						</li>
-						<li>
-							<a href="">Пациентам</a>
-						</li>
-						<li>
-							<a href="">Врачам</a>
-						</li>
-						<li>
-							<a href="">Результаты онлайн</a>
-						</li>
-						<li>
-							<a href="">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="slide">
+					<div class="img">
+						<img src="img/susan.png" alt="">
+					</div>
+					<div style="background-image: url('img/tea.jpg')" class="under">
+						<div class="title">Какой-то Susan</div>
+						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
+							во всей своей деятельности с первого дня своего основания.</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="img">
+						<img src="img/logocoffee.jpg" alt="">
+					</div>
+					<div style="background-image: url('img/tea.jpg')" class="under">
+						<div class="title">кофе mahmood</div>
+						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
+							во всей своей деятельности с первого дня своего основания.</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="img">
+						<img src="img/logotea.png" alt="">
+					</div>
+					<div style="background-image: url('img/tea.jpg')" class="under">
+						<div class="title">чай mahmood</div>
+						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
+							во всей своей деятельности с первого дня своего основания.</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="img">
+						<img src="img/susan.png" alt="">
+					</div>
+					<div style="background-image: url('img/tea.jpg')" class="under">
+						<div class="title">Какой-то Susan</div>
+						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
+							во всей своей деятельности с первого дня своего основания.</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="img">
+						<img src="img/logocoffee.jpg" alt="">
+					</div>
+					<div style="background-image: url('img/tea.jpg')" class="under">
+						<div class="title">кофе mahmood</div>
+						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
+							во всей своей деятельности с первого дня своего основания.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="home-news">
+			<div class="wrapper">
+				<h2 class="main-title">Новости
+					<img src="img/ico3.png" alt="">
+				</h2>
+				<div class="news-list">
+					<div class="news-block">
+						<div class="img">
+							<img src="img/news1.jpg" alt="">
+							<img src="img/reds.png" alt="" class="ang">
+						</div>
+						<div class="info">
+							<div class="title">Lorem</div>
+							<div class="sub-title">Ipsum</div>
+							<div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, mollitia recusandae cumque illum obcaecati minus.
+								Magnam eius eum id nam harum tenetur eligendi facilis rerum placeat sequi sit iste, similique optio unde libero et
+								omnis quisquam ipsum modi repellendus beatae. Voluptatum ex, id facere. Placeat eveniet, fuga beatae accusamus possimus
+								ullam necessitatibus, harum quam nesciunt labore, minus id iusto cum recusandae? Unde, ipsam, eos.</div>
+							<div class="more">
+								<a href="#">подробнее ></a>
+							</div>
+						</div>
+					</div>
+					<div class="news-block">
+						<div class="img">
+							<img src="img/news2.jpg" alt="">
+							<img src="img/reds.png" alt="" class="ang">
+						</div>
+						<div class="info">
+							<div class="title">Lorem</div>
+							<div class="sub-title">Ipsum</div>
+							<div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, mollitia recusandae cumque illum obcaecati minus.
+								Magnam eius eum id nam harum tenetur eligendi facilis rerum placeat sequi sit iste, similique optio unde libero et
+								omnis quisquam ipsum modi repellendus beatae. Voluptatum ex, id facere. Placeat eveniet, fuga beatae accusamus possimus
+								ullam necessitatibus, harum quam nesciunt labore, minus id iusto cum recusandae? Unde, ipsam, eos.</div>
+							<div class="more">
+								<a href="#">подробнее ></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="home-news-more">показать больше новостей</a>
+			</div>
+		</section>
+		<section class="home-partners">
+			<div class="wrapper">
+				<div class="col">
+					<h2 class="main-title">для партнеров
+						<img src="img/ico4.png" alt="">
+					</h2>
+					<div class="partners-text-carousel owl-carousel">
+						<div class="text">
+							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, hic possimus error ducimus, dolore assumenda. Praesentium
+								eveniet inventore, expedita! Recusandae error qui quos placeat, officiis velit ullam voluptatem officia magni ut
+								natus dicta est beatae consectetur sunt sapiente accusantium dolorem asperiores quam, eveniet, ratione ab. Sint aliquid
+								id placeat veniam nulla quia, nostrum velit repellat. Dolores error illo omnis aliquid illum maiores assumenda quaerat!</p>
+						</div>
+						<div class="text">
+							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, hic possimus error ducimus, dolore assumenda. Praesentium
+								eveniet inventore, expedita! Recusandae error qui quos placeat, officiis velit ullam voluptatem officia magni ut
+								natus dicta est beatae consectetur sunt sapiente accusantium dolorem asperiores quam, eveniet, ratione ab. Sint aliquid
+								id placeat veniam nulla quia, nostrum velit repellat. Dolores error illo omnis aliquid illum maiores assumenda quaerat!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="img">
+						<img src="img/partners.jpg" alt="">
+						<img src="img/reds.png" alt="" class="ang">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="wrapper">
+				<div class="footer-top">
+					<a href="/" class="logo">
+						<img src="img/logo.png" alt="">
+					</a>
+					<div class="call-btn">
+						<a href="#footer-popup" class="btn popup">связаться</a>
+					</div>
+					<nav class="navigation">
+						<ul>
+							<li class="is-active">
+								<a href="#">главная</a>
+							</li>
+							<li>
+								<a href="#">О компании</a>
+							</li>
+							<li>
+								<a href="#">бренды</a>
+							</li>
+							<li>
+								<a href="#">новости</a>
+							</li>
+							<li>
+								<a href="#">вакансии</a>
+							</li>
+							<li>
+								<a href="#">контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-partners">
+						<ul>
+							<li>
+								<a href="#">SusanTea.com</a>
+							</li>
+							<li>
+								<a href="#">MahmoodTea.com</a>
+							</li>
+							<li>
+								<a href="#">MahmoodCoffee.com</a>
+							</li>
+							<li>
+								<a href="#">GumMarket.com</a>
+							</li>
+							<li>
+								<a href="#">Tamashee.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-partners social">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/google-plus.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/facebook-logo.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/twitter-logo.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/instagram-logo.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</footer>
+		<div id="footer-popup" class="modal mfp-hide">
+			<div class="wrapper">
+				<a href="#" class="modal-dismiss">✕</a>
+				<div class="title">Заполните форму и наш специалист свяжется с вами</div>
+				<form class="modal-form">
+					<input type="text" placeholder="имя" class="input-text">
+					<input type="text" placeholder="компания" class="input-text">
+					<input type="text" placeholder="телефон" class="input-text">
+					<input type="text" placeholder="почта" class="input-text">
+					<input type="submit" value="отправить" class="input-submit">
+				</form>
+			</div>
+		</div>
+		<div id="career-popup" class="modal mfp-hide">
+			<div class="wrapper">
+				<a href="#" class="modal-dismiss">✕</a>
+				<div class="title">Заполните форму и наш специалист свяжется с вами</div>
+				<form class="modal-form">
+					<input type="text" placeholder="имя" class="input-text">
+					<input type="text" placeholder="город" class="input-text">
+					<input type="text" placeholder="интересующая вакансия" class="input-text">
+					<input type="text" placeholder="телефон" class="input-text">
+					<input type="text" placeholder="почта" class="input-text">
+					<input type="submit" value="отправить" class="input-submit">
+				</form>
+			</div>
+		</div>
+		<div id="contacts-popup" class="modal mfp-hide">
+			<div class="wrapper">
+				<a href="#" class="modal-dismiss">✕</a>
+				<div class="title">Заполните форму и наш специалист свяжется с вами</div>
+				<form class="modal-form">
+					<input type="text" placeholder="имя" class="input-text">
+					<input type="text" placeholder="компания" class="input-text">
+					<input type="text" placeholder="телефон" class="input-text">
+					<input type="text" placeholder="почта" class="input-text">
+					<input type="text" placeholder="ваш вопрос" class="input-text">
+					<input type="submit" value="отправить" class="input-submit">
+				</form>
+			</div>
+		</div>
+		<div id="success-popup" class="modal mfp-hide">
+			<div class="wrapper">
+				<a href="#" class="modal-dismiss">✕</a>
+				<div class="title">Ваша заявка принята!</div>
+				<div class="title">Наш специалист свяжется с вами</div>
+				<div class="title">в ближайшее рабочее время</div>
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+			</div>
+		</div>
 		<script src="./assets/scripts/app.min.js"></script>
 	</body>
 
