@@ -24,7 +24,7 @@ body {background-image: url(../../img/pat.png);background-attachment: fixed;back
 	width: 100%;
 	padding: 2% 0;
 }
-#first.screen{text-align: center;min-height: 100vh;}
+#first.screen{text-align: center;min-height: 100vh;padding-top: 60px;}
 #first .title {
 	color: #fff;
 	font-size: 4rem;
