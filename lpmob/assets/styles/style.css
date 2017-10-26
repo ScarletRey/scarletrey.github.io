@@ -27,9 +27,15 @@ body {background-image: url(../../img/pat.png);background-attachment: fixed;back
 #first.screen{text-align: center;min-height: 100vh;}
 #first .title {
 	color: #fff;
-	font-size: 28px;
-	margin-bottom: 8vw;
+	font-size: 4rem;
+	margin-bottom: 2vw;
 	text-shadow: 0px 0px 20px #000, 5px 5px 20px #000, -5px -5px 20px #000;
+}
+#first .sub-title {
+  color: #fff;
+  font-size: 2.15rem;
+  margin-bottom: 8vw;
+  text-shadow: 0px 0px 20px #000, 5px 5px 20px #000, -5px -5px 20px #000;
 }
 
 @media (min-width: 650px) {
@@ -69,10 +75,10 @@ body {background-image: url(../../img/pat.png);background-attachment: fixed;back
 #second .col {margin-bottom: 12px;}
 
 .works-form{ padding: 10px 0; display: none;}
-.works-form__check{display: block;color: #fff; padding: 5px 0;}
+.works-form__check{display: block;color: #fff; padding: 5px 0;font-size: 1.6rem;}
 .works-form__check:before{margin-right: 12px;content: '';width: 15px;height: 15px; border: 2px solid #fff;display: inline-block;border-radius: 50%;
  box-shadow: inset 0px 0px 0px 0px #fff; transition: .25s;vertical-align: text-bottom;}
-.works-form__text{display: block;color: #000; padding: 5px;width: 100%;margin-bottom: 4px;}
+.works-form__text{display: block;color: #000; padding: 5px;width: 100%;margin-bottom: 4px;font-size: 1.6rem;}
 .works-form__submit{padding: 5px; border: 0;width: 100%;}
 @media (min-width: 650px) {
 	#second .col {width: 48%;display: inline-block;vertical-align: top;}
@@ -107,10 +113,10 @@ body {background-image: url(../../img/pat.png);background-attachment: fixed;back
 	}
 }*/
 
-#fourth ul{text-align: center;padding-left: 0;list-style: none;}
+#fourth ul{/*text-align: center;*/padding-left: 0;list-style: none;}
 #fourth li{font-size: 20px; margin-bottom: 8px;}
 #fourth li:before{content: '●';display: inline-block;margin-right: 12px;}
-#fourth .info {text-align: justify;}
+#fourth .info {text-align: justify;font-size: 1.6rem;}
 
 /*navbar*/
 .Navbar ul {
@@ -140,6 +146,7 @@ body {
   padding-top: 3rem;
   border-radius: 100%;
   background-color: transparent;
+  float: right;
 }
 button.Toggle {
   border: 0;
@@ -263,20 +270,8 @@ button.Toggle {
     display: none;
   }
 
-  body {
-    padding-top: 0;
-    padding-left: 6rem;
-  }
-
-  .Navbar {
-    bottom: 0;
-    width: 6rem;
-  }
-
-
   .Navbar-menu {
     top: 0;
-    left: 6rem;
     padding-top: 5.2rem;
   }
   .Navbar-menu.is-active {
@@ -284,3 +279,4 @@ button.Toggle {
   }
 
 }
+.nav-tel {display: inline-block;font-size: 1.4rem;float: left;padding: 1.6rem 15px;}
