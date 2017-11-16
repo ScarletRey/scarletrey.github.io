@@ -16,7 +16,7 @@
 		<link sizes="16x16" href="/favicon-16x16.png" rel="icon" type="image/png">
 		<meta name="application-name" content="">
 		<meta name="msapplication-tooltip" content="">
-		<title>Home</title>
+		<title>Главная</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link href="./assets/styles/app.min.css" rel="stylesheet">
@@ -25,361 +25,235 @@
 	<body>
 		<header>
 			<div class="wrapper">
-				<a href="/" class="logo">
-					<img src="img/logo.png" alt="">
-				</a>
-				<nav class="navigation js-nav">
+				<div class="header__logo">
+					<a href="#">
+						<img src="img/headlogo.png" alt="">
+					</a>
+				</div>
+				<nav class="navigation">
 					<ul>
-						<li class="is-active">
-							<a href="#">главная</a>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Покупателю</a>
 						</li>
 						<li>
 							<a href="#">О компании</a>
 						</li>
 						<li>
-							<a href="#">бренды</a>
+							<a href="#">Материалы</a>
 						</li>
 						<li>
-							<a href="#">новости</a>
+							<a href="#">Партнеры</a>
 						</li>
 						<li>
-							<a href="#">вакансии</a>
-						</li>
-						<li>
-							<a href="#">контакты</a>
-						</li>
-						<li class="lang">
-							<a href="#" class="is-active">RU </a>
-							<span class="divider">|</span>
-							<a href="#">EN</a>
+							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
+				<div class="header__search">
+					<svg class="ico"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/icon.svg#icon_magnifying-glass"></use></svg>
 				</div>
 			</div>
 		</header>
 		<section>
-			<div class="header-carousel owl-carousel">
-				<div style="background-image: url('img/hbg1.jpg')" class="slide">
-					<div class="img">
-						<img src="img/logotea.png" alt="">
-					</div>
+			<div class="top-slider owl-carousel">
+				<div style="background-image: url(img/slide1.jpg)" class="slide">
 					<div class="text">
-						<p>РАБОТАЕМ С 1995 ГОДА</p>
-						<p>оптовые поставки брендовой продукции</p>
-						<p>на выгодных условиях</p>
+						<div class="title">Leonardo</div>
+						<div class="info">is simply dummy text of the printing
+							<br> and typesetting industry.</div>
 					</div>
 				</div>
-				<div style="background-image: url('img/hbg1.jpg')" class="slide">
-					<div class="img">
-						<img src="img/logotea.png" alt="">
-					</div>
+				<div style="background-image: url(img/slide2.jpg)" class="slide">
 					<div class="text">
-						<p>РАБОТАЕМ С 1995 ГОДА ломаем верстку и придумываем как быть</p>
-						<p>оптовые поставки брендовой продукции</p>
-						<p>на выгодных условиях и немного тут сломаем для пущей уверенности</p>
+						<div class="title">Leonardo</div>
+						<div class="info">is simply dummy text of the printing
+							<br> and typesetting industry.
+							<br> and typesetting industry.</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="home-about">
+		<section style="background-image: url(img/back2.jpg)" class="home__block2">
+			<div class="wrapper center">
+				<h2 class="main-title">Наш главный приоритет:</h2>
+				<div class="under-main-title">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</div>
+				<ul class="priority">
+					<li>
+						<img src="img/utp1.png" alt="">
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta maxime amet cupiditate. Debitis dicta, temporibus
+							unde!</p>
+					</li>
+					<li>
+						<img src="img/utp2.png" alt="">
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed iure, voluptatem. Obcaecati porro dignissimos neque maiores.</p>
+					</li>
+					<li>
+						<img src="img/utp3.png" alt="">
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium reprehenderit at, sed consequatur earum
+							fuga.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div class="wrapper center">
+				<h2 class="main-title">Хит продаж</h2>
+				<div class="hit-slider owl-carousel">
+					<div class="slide">
+						<img src="img/hit1.jpg" alt="">
+						<p>Цена от 58.000 рублей</p>
+						<a href="#">смотреть</a>
+					</div>
+					<div class="slide">
+						<img src="img/hit2.jpg" alt="">
+						<p>Цена от 58.000 рублей</p>
+						<a href="#">смотреть</a>
+					</div>
+					<div class="slide">
+						<img src="img/hit3.jpg" alt="">
+						<p>Цена от 58.000 рублей</p>
+						<a href="#">смотреть</a>
+					</div>
+					<div class="slide">
+						<img src="img/hit4.jpg" alt="">
+						<p>Цена от 58.000 рублей</p>
+						<a href="#">смотреть</a>
+					</div>
+					<div class="slide">
+						<img src="img/hit1.jpg" alt="">
+						<p>Цена от 58.000 рублей</p>
+						<a href="#">смотреть</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section style="background-image: url(img/back4.jpg)" class="home__block4">
+			<div class="wrapper center">
+				<h2 class="main-title white">НАША ПРОДУКЦИЯ</h2>
+				<div class="under-main-title white mod1">s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+					ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+				<ul
+				 class="home__catalog">
+					<li>
+						<img src="img/cat1.jpg" alt="">
+						<a href="#" class="under">
+							<span class="text">
+								<span class="title">Lorem</span>
+								<span class="info"> Lorem ipsum dolor sit amet, consectetur.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="img/cat2.jpg" alt="">
+						<a href="#" class="under">
+							<span class="text">
+								<span class="title">Lorem</span>
+								<span class="info"> Lorem ipsum dolor sit amet, consectetur.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="img/cat3.jpg" alt="">
+						<a href="#" class="under">
+							<span class="text">
+								<span class="title">Lorem</span>
+								<span class="info"> Lorem ipsum dolor sit amet, consectetur.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="img/cat4.jpg" alt="">
+						<a href="#" class="under">
+							<span class="text">
+								<span class="title">Lorem</span>
+								<span class="info"> Lorem ipsum dolor sit amet, consectetur.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="img/cat5.jpg" alt="">
+						<a href="#" class="under">
+							<span class="text">
+								<span class="title">Lorem</span>
+								<span class="info"> Lorem ipsum dolor sit amet, consectetur.</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="img/cat6.jpg" alt="">
+						<a href="#" class="under">
+							<span class="text">
+								<span class="title">Lorem</span>
+								<span class="info"> Lorem ipsum dolor sit amet, consectetur.</span>
+							</span>
+						</a>
+					</li>
+					</ul>
+					<a href="#" class="catalog-link-btn">Смотреть все колекции</a>
+			</div>
+		</section>
+		<section style="background-image: url(img/back5.jpg)" class="home__block5">
 			<div class="wrapper">
-				<div class="col">
-					<h2 class="main-title">О НАС
-						<img src="img/ico1.png" alt="">
-					</h2>
+				<div class="block5cont">
+					<div class="img">
+						<img src="img/bed.png" alt="">
+					</div>
 					<div class="text">
-						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, hic possimus error ducimus, dolore assumenda. Praesentium
-							eveniet inventore, expedita! Recusandae error qui quos placeat, officiis velit ullam voluptatem officia magni ut natus
-							dicta est beatae consectetur sunt sapiente accusantium dolorem asperiores quam, eveniet, ratione ab. Sint aliquid
-							id placeat veniam nulla quia, nostrum velit repellat. Dolores error illo omnis aliquid illum maiores assumenda quaerat!</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="img">
-						<img src="img/ai1.jpg" alt="">
-						<img src="img/reds.png" alt="" class="ang">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="home-brands">
-			<div class="wrapper">
-				<h2 class="main-title">бренды
-					<img src="img/ico2.png" alt="">
-				</h2>
-			</div>
-			<div class="brands-carousel owl-carousel">
-				<div class="slide">
-					<div class="img">
-						<img src="img/logotea.png" alt="">
-					</div>
-					<div style="background-image: url('img/tea.jpg')" class="under">
-						<div class="title">чай mahmood</div>
-						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
-							во всей своей деятельности с первого дня своего основания.</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img">
-						<img src="img/susan.png" alt="">
-					</div>
-					<div style="background-image: url('img/tea.jpg')" class="under">
-						<div class="title">Какой-то Susan</div>
-						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
-							во всей своей деятельности с первого дня своего основания.</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img">
-						<img src="img/logocoffee.jpg" alt="">
-					</div>
-					<div style="background-image: url('img/tea.jpg')" class="under">
-						<div class="title">кофе mahmood</div>
-						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
-							во всей своей деятельности с первого дня своего основания.</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img">
-						<img src="img/logotea.png" alt="">
-					</div>
-					<div style="background-image: url('img/tea.jpg')" class="under">
-						<div class="title">чай mahmood</div>
-						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
-							во всей своей деятельности с первого дня своего основания.</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img">
-						<img src="img/susan.png" alt="">
-					</div>
-					<div style="background-image: url('img/tea.jpg')" class="under">
-						<div class="title">Какой-то Susan</div>
-						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
-							во всей своей деятельности с первого дня своего основания.</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="img">
-						<img src="img/logocoffee.jpg" alt="">
-					</div>
-					<div style="background-image: url('img/tea.jpg')" class="under">
-						<div class="title">кофе mahmood</div>
-						<div class="text">Учрежденная семьей Алтункая, Mahmood Tea International Pvt (Altunkaya Group) применяет самые высокие стандарты качества
-							во всей своей деятельности с первого дня своего основания.</div>
+						<div class="col">
+							<p>ИЩЕТЕ кровать СВОЕЙ МЕЧТы?</p>
+							<br>
+							<p>Мы готовы воплотить Вашу мечту в реальность!</p>
+						</div>
+						<div class="col">
+							<a href="#" class="btn">Оставить заявку</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="home-news">
-			<div class="wrapper">
-				<h2 class="main-title">Новости
-					<img src="img/ico3.png" alt="">
-				</h2>
-				<div class="news-list">
-					<div class="news-block">
+		<section>
+			<div class="wrapper center">
+				<h2 class="main-title">Преимущество</h2>
+				<ul class="home_advantages">
+					<li>
 						<div class="img">
-							<img src="img/news1.jpg" alt="">
-							<img src="img/reds.png" alt="" class="ang">
+							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_medal"></use></svg>
 						</div>
-						<div class="info">
-							<div class="title">Lorem</div>
-							<div class="sub-title">Ipsum</div>
-							<div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, mollitia recusandae cumque illum obcaecati minus.
-								Magnam eius eum id nam harum tenetur eligendi facilis rerum placeat sequi sit iste, similique optio unde libero et
-								omnis quisquam ipsum modi repellendus beatae. Voluptatum ex, id facere. Placeat eveniet, fuga beatae accusamus possimus
-								ullam necessitatibus, harum quam nesciunt labore, minus id iusto cum recusandae? Unde, ipsam, eos.</div>
-							<div class="more">
-								<a href="#">подробнее ></a>
-							</div>
-						</div>
-					</div>
-					<div class="news-block">
+					</li>
+					<li>
 						<div class="img">
-							<img src="img/news2.jpg" alt="">
-							<img src="img/reds.png" alt="" class="ang">
+							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_sand-clock"></use></svg>
 						</div>
-						<div class="info">
-							<div class="title">Lorem</div>
-							<div class="sub-title">Ipsum</div>
-							<div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, mollitia recusandae cumque illum obcaecati minus.
-								Magnam eius eum id nam harum tenetur eligendi facilis rerum placeat sequi sit iste, similique optio unde libero et
-								omnis quisquam ipsum modi repellendus beatae. Voluptatum ex, id facere. Placeat eveniet, fuga beatae accusamus possimus
-								ullam necessitatibus, harum quam nesciunt labore, minus id iusto cum recusandae? Unde, ipsam, eos.</div>
-							<div class="more">
-								<a href="#">подробнее ></a>
-							</div>
+					</li>
+					<li>
+						<div class="img">
+							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_handshake"></use></svg>
 						</div>
-					</div>
-				</div>
-				<a href="#" class="home-news-more">показать больше новостей</a>
+					</li>
+					<li>
+						<div class="img">
+							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_operator"></use></svg>
+						</div>
+					</li>
+					<li>
+						<div class="img">
+							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_divan"></use></svg>
+						</div>
+					</li>
+					<li>
+						<div class="img">
+							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_partners"></use></svg>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
-		<section class="home-partners">
-			<div class="wrapper">
-				<div class="col">
-					<h2 class="main-title">для партнеров
-						<img src="img/ico4.png" alt="">
-					</h2>
-					<div class="partners-text-carousel owl-carousel">
-						<div class="text">
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, hic possimus error ducimus, dolore assumenda. Praesentium
-								eveniet inventore, expedita! Recusandae error qui quos placeat, officiis velit ullam voluptatem officia magni ut
-								natus dicta est beatae consectetur sunt sapiente accusantium dolorem asperiores quam, eveniet, ratione ab. Sint aliquid
-								id placeat veniam nulla quia, nostrum velit repellat. Dolores error illo omnis aliquid illum maiores assumenda quaerat!</p>
-						</div>
-						<div class="text">
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, hic possimus error ducimus, dolore assumenda. Praesentium
-								eveniet inventore, expedita! Recusandae error qui quos placeat, officiis velit ullam voluptatem officia magni ut
-								natus dicta est beatae consectetur sunt sapiente accusantium dolorem asperiores quam, eveniet, ratione ab. Sint aliquid
-								id placeat veniam nulla quia, nostrum velit repellat. Dolores error illo omnis aliquid illum maiores assumenda quaerat!</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="img">
-						<img src="img/partners.jpg" alt="">
-						<img src="img/reds.png" alt="" class="ang">
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<div class="wrapper">
-				<div class="footer-top">
-					<a href="/" class="logo">
-						<img src="img/logo.png" alt="">
-					</a>
-					<div class="call-btn">
-						<a href="#footer-popup" class="btn popup">связаться</a>
-					</div>
-					<nav class="navigation">
-						<ul>
-							<li class="is-active">
-								<a href="#">главная</a>
-							</li>
-							<li>
-								<a href="#">О компании</a>
-							</li>
-							<li>
-								<a href="#">бренды</a>
-							</li>
-							<li>
-								<a href="#">новости</a>
-							</li>
-							<li>
-								<a href="#">вакансии</a>
-							</li>
-							<li>
-								<a href="#">контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer-bottom">
-					<div class="footer-partners">
-						<ul>
-							<li>
-								<a href="#">SusanTea.com</a>
-							</li>
-							<li>
-								<a href="#">MahmoodTea.com</a>
-							</li>
-							<li>
-								<a href="#">MahmoodCoffee.com</a>
-							</li>
-							<li>
-								<a href="#">GumMarket.com</a>
-							</li>
-							<li>
-								<a href="#">Tamashee.com</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-partners social">
-						<ul>
-							<li>
-								<a href="#">
-									<img src="img/google-plus.svg" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="img/facebook-logo.svg" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="img/twitter-logo.svg" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="img/instagram-logo.svg" alt="">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<div id="footer-popup" class="modal mfp-hide">
-			<div class="wrapper">
-				<a href="#" class="modal-dismiss">✕</a>
-				<div class="title">Заполните форму и наш специалист свяжется с вами</div>
-				<form class="modal-form">
-					<input type="text" placeholder="имя" class="input-text">
-					<input type="text" placeholder="компания" class="input-text">
-					<input type="text" placeholder="телефон" class="input-text">
-					<input type="text" placeholder="почта" class="input-text">
-					<input type="submit" value="отправить" class="input-submit">
-				</form>
-			</div>
-		</div>
-		<div id="career-popup" class="modal mfp-hide">
-			<div class="wrapper">
-				<a href="#" class="modal-dismiss">✕</a>
-				<div class="title">Заполните форму и наш специалист свяжется с вами</div>
-				<form class="modal-form">
-					<input type="text" placeholder="имя" class="input-text">
-					<input type="text" placeholder="город" class="input-text">
-					<input type="text" placeholder="интересующая вакансия" class="input-text">
-					<input type="text" placeholder="телефон" class="input-text">
-					<input type="text" placeholder="почта" class="input-text">
-					<input type="submit" value="отправить" class="input-submit">
-				</form>
-			</div>
-		</div>
-		<div id="contacts-popup" class="modal mfp-hide">
-			<div class="wrapper">
-				<a href="#" class="modal-dismiss">✕</a>
-				<div class="title">Заполните форму и наш специалист свяжется с вами</div>
-				<form class="modal-form">
-					<input type="text" placeholder="имя" class="input-text">
-					<input type="text" placeholder="компания" class="input-text">
-					<input type="text" placeholder="телефон" class="input-text">
-					<input type="text" placeholder="почта" class="input-text">
-					<input type="text" placeholder="ваш вопрос" class="input-text">
-					<input type="submit" value="отправить" class="input-submit">
-				</form>
-			</div>
-		</div>
-		<div id="success-popup" class="modal mfp-hide">
-			<div class="wrapper">
-				<a href="#" class="modal-dismiss">✕</a>
-				<div class="title">Ваша заявка принята!</div>
-				<div class="title">Наш специалист свяжется с вами</div>
-				<div class="title">в ближайшее рабочее время</div>
-				<div class="logo">
-					<img src="img/logo.png" alt="">
-				</div>
-			</div>
-		</div>
 		<script src="./assets/scripts/app.min.js"></script>
 	</body>
 
