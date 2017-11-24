@@ -13,7 +13,23 @@
 		<meta name="format-detection" content="address=no">
 		<meta name="google" value="notranslate">
 		<meta name="theme-color" content="#ffffff">
-		<link sizes="16x16" href="/favicon-16x16.png" rel="icon" type="image/png">
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		<meta name="application-name" content="">
 		<meta name="msapplication-tooltip" content="">
 		<title>Главная</title>
@@ -54,13 +70,23 @@
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
+					<div class="hamburger-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</nav>
 				<div class="header__search">
 					<svg class="ico"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/icon.svg#icon_magnifying-glass"></use></svg>
 				</div>
 			</div>
 		</header>
-		<section>
+		<section style="position:relative;">
+			<div class="slide-down">
+				<a href="#sect2">
+					<img src="img/slide-down.svg" alt="">
+				</a>
+			</div>
 			<div class="top-slider owl-carousel">
 				<div style="background-image: url(img/slide1.jpg)" class="slide">
 					<div class="text">
@@ -78,8 +104,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="slider-arc">
+				<img src="img/arc.png" alt="">
+			</div>
 		</section>
-		<section style="background-image: url(img/back2.jpg)" class="home__block2">
+		<section style="background-image: url(img/back2.jpg); position:relative;" id="sect2" class="home__block2">
+			<div class="slide-down">
+				<a href="#sect3">
+					<img src="img/slide-down.svg" alt="">
+				</a>
+			</div>
 			<div class="wrapper center">
 				<h2 class="main-title">Наш главный приоритет:</h2>
 				<div class="under-main-title">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</div>
@@ -101,7 +135,7 @@
 				</ul>
 			</div>
 		</section>
-		<section>
+		<section id="sect3">
 			<div class="wrapper center">
 				<h2 class="main-title">Хит продаж</h2>
 				<div class="hit-slider owl-carousel">
@@ -133,7 +167,12 @@
 				</div>
 			</div>
 		</section>
-		<section style="background-image: url(img/back4.jpg)" class="home__block4">
+		<section style="background-image: url(img/back4.jpg);position:relative;" class="home__block4">
+			<div class="slide-down">
+				<a href="#sect6">
+					<img src="img/slide-down.svg" alt="">
+				</a>
+			</div>
 			<div class="wrapper center">
 				<h2 class="main-title white">НАША ПРОДУКЦИЯ</h2>
 				<div class="under-main-title white mod1">s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
@@ -211,49 +250,271 @@
 							<p>Мы готовы воплотить Вашу мечту в реальность!</p>
 						</div>
 						<div class="col">
-							<a href="#" class="btn">Оставить заявку</a>
+							<a data-fancybox data-src="#callback" href="javascript:;" class="btn">Оставить заявку</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="wrapper center">
+		<section style="position:relative;" id="sect6" class="home__block6">
+			<div class="slide-down">
+				<a href="#sect7">
+					<img src="img/slide-down.svg" alt="">
+				</a>
+			</div>
+			<div class="wrapper center med">
 				<h2 class="main-title">Преимущество</h2>
 				<ul class="home_advantages">
 					<li>
 						<div class="img">
-							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_medal"></use></svg>
+							<svg width="108" height="115" class="ico"><use xlink:href="/assets/images/icon.svg#icon_medal"></use></svg>
 						</div>
+						<div class="title">КАЧЕСТВО</div>
+						<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</li>
 					<li>
 						<div class="img">
-							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_sand-clock"></use></svg>
+							<svg width="90" height="95" class="ico"><use xlink:href="/assets/images/icon.svg#icon_sand-clock"></use></svg>
 						</div>
+						<div class="title">ЧЕТКИЕ СРОКИ</div>
+						<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</li>
 					<li>
 						<div class="img">
-							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_handshake"></use></svg>
+							<svg width="96" height="84" class="ico"><use xlink:href="/assets/images/icon.svg#icon_handshake"></use></svg>
 						</div>
+						<div class="title">ПРОФЕССИОНАЛИЗМ</div>
+						<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</li>
 					<li>
 						<div class="img">
-							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_operator"></use></svg>
+							<svg width="99" height="99" class="ico"><use xlink:href="/assets/images/icon.svg#icon_operator"></use></svg>
 						</div>
+						<div class="title">МЫ ЦЕНИМ КАЖДОГО КЛИЕНТА!</div>
+						<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</li>
 					<li>
 						<div class="img">
-							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_divan"></use></svg>
+							<img src="img/divan.svg" alt="" width="107" height="72" class="ico">
 						</div>
+						<div class="title">ПРОИЗВОДСТВО</div>
+						<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</li>
 					<li>
 						<div class="img">
-							<svg class="ico"><use xlink:href="/assets/images/icon.svg#icon_partners"></use></svg>
+							<svg width="105" height="106" class="ico"><use xlink:href="/assets/images/icon.svg#icon_partners"></use></svg>
 						</div>
+						<div class="title">ПАРТНЁРАМ</div>
+						<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</li>
 				</ul>
 			</div>
+			<div class="angle">
+				<img src="img/angle.png" alt="">
+			</div>
 		</section>
+		<section style="background-image: url(img/back7.jpg)" id="sect7" class="home__block7">
+			<div class="wrapper center">
+				<h2 class="main-title white">НАШИ КОЛЛЕКЦИИ</h2>
+				<div class="home__collection owl-carousel">
+					<div data-dot="&lt;span&gt;Кухни&lt;/span&gt;" class="slide">
+						<div class="img">
+							<img src="img/shkaf.jpg" alt="">
+						</div>
+						<div class="info">
+							<div class="title">Lorem Ipsum</div>
+							<div class="text"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+								into electronic typesetting, remaining essentially unchanged.</div>
+							<div class="price">Цена от 58.000 рублей </div>
+							<a href="#" class="link">Подробнее</a>
+							<div class="thumbs">
+								<a href="img/shkaf.jpg" data-fancybox="collection">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+								<a href="img/shkaf.jpg" data-fancybox="collection">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+								<a href="img/shkaf.jpg" data-fancybox="collection">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+								<a href="img/shkaf.jpg" data-fancybox="collection">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div data-dot="&lt;span&gt;Шкафы&lt;/span&gt;" class="slide">
+						<div class="img">
+							<img src="img/shkaf.jpg" alt="">
+						</div>
+						<div class="info">
+							<div class="title">Lorem Ipsum</div>
+							<div class="text"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+								into electronic typesetting, remaining essentially unchanged.</div>
+							<div class="price">Цена от 58.000 рублей </div>
+							<a href="#" class="link">Подробнее</a>
+							<div class="thumbs">
+								<a href="img/shkaf.jpg" data-fancybox="collection2">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+								<a href="img/shkaf.jpg" data-fancybox="collection2">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+								<a href="img/shkaf.jpg" data-fancybox="collection2">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+								<a href="img/shkaf.jpg" data-fancybox="collection2">
+									<img src="img/thumb.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section style="background-image: url(img/back8.jpg)" class="home__block8">
+			<div class="angle">
+				<img src="img/angle2.png" alt="">
+			</div>
+			<div class="wrapper center">
+				<h2 class="main-title">Отзывы наших покупателей</h2>
+				<div class="home__review owl-carousel">
+					<div class="slide">
+						<div class="text">
+							<img src="img/quotes.png" alt="">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. There is no one who loves
+							pain itself, who seeks after it and wants to have it, simply because it is pain...
+							<img src="img/quotes.png" alt="">
+						</div>
+						<div class="photo">
+							<img src="img/photo.png" alt="">
+						</div>
+						<div class="name">Нюша</div>
+						<div class="town">Москва</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="img/quotes.png" alt="">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. There is no one who loves
+							pain itself, who seeks after it and wants to have it, simply because it is pain...
+							<img src="img/quotes.png" alt="">
+						</div>
+						<div class="photo">
+							<img src="img/photo.png" alt="">
+						</div>
+						<div class="name">Нюша</div>
+						<div class="town">Москва</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section style="background-image: url(img/back9.jpg)" class="home__block9">
+			<div class="wrapper center med">
+				<h2 class="main-title white">СРОКИ ИЗГОТОВЛЕНИЯ И ДОСТАВКА</h2>
+				<ul class="home__work-time">
+					<li>
+						<p>There is no one who</p>
+						<img src="img/time1.png" alt="">
+						<p>dolorem ipsum</p>
+					</li>
+					<li>
+						<p>There is no one who</p>
+						<img src="img/time2.png" alt="">
+						<p>dolorem ipsum</p>
+					</li>
+					<li>
+						<p>There is no one who</p>
+						<img src="img/time3.png" alt="">
+						<p>dolorem ipsum</p>
+					</li>
+					<li>
+						<p>There is no one who</p>
+						<img src="img/time4.png" alt="">
+						<p>dolorem ipsum</p>
+					</li>
+					<li>
+						<p>There is no one who</p>
+						<img src="img/time5.png" alt="">
+						<p>dolorem ipsum</p>
+					</li>
+					<li>
+						<p>There is no one who</p>
+						<img src="img/time6.png" alt="">
+						<p>dolorem ipsum</p>
+					</li>
+				</ul>
+				<a data-fancybox data-src="#callback" href="javascript:;" class="btn">Оставить заявку</a>
+			</div>
+		</section>
+		<section style="padding-top:45px; position:relative;">
+			<div class="over-form">
+				<img src="img/forml.png" alt="">
+				<img src="img/formr.png" alt="">
+			</div>
+			<div class="wrapper center">
+				<h2 class="main-title">ПОЛУЧИТЕ ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ!</h2>
+				<form class="home__form">
+					<p>Заполните форму сейчас и получите бесплатный расчет стоимости дивана по Вашим параметрам, а также приятный бонус!</p>
+					<input
+					 type="text" placeholder="Ваше имя" class="input-text">
+						<input type="tel" placeholder="Телефон" class="input-text">
+						<input type="email" placeholder="Ваш Email" class="input-text">
+						<textarea name="" cols="30" rows="10" placeholder="Сообщение" class="input-area"></textarea>
+						<div class="input-check">
+							<input type="checkbox" required>
+							<span>я согласен на обработку персональных данных</span>
+						</div>
+						<input type="submit" value="Получить бонус" class="input-btn">
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="wrapper">
+				<div class="footer__logo">
+					<img src="img/footlogo.png" alt="">
+				</div>
+				<nav class="navigation">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Покупателю</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Материалы</a>
+						</li>
+						<li>
+							<a href="#">Партнеры</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<div id="callback" style="display:none;" class="modal">
+			<form class="home__form modal">
+				<p class="modal__title">Обратный звонок!</p>
+				<p class="modal__under-title">Заполните форму и мы свяжимся с вами в ближайшее время</p>
+				<input type="text" placeholder="Ваше имя" class="input-text">
+				<input type="tel" placeholder="Телефон" class="input-text">
+				<input type="email" placeholder="Ваш Email" class="input-text">
+				<textarea name="" cols="30" rows="10" placeholder="Сообщение" class="input-area"></textarea>
+				<div class="input-check">
+					<input type="checkbox" required>
+					<span>я согласен на обработку персональных данных</span>
+				</div>
+				<input type="submit" value="Заказать обратный звонок " class="input-btn">
+			</form>
+		</div>
 		<script src="./assets/scripts/app.min.js"></script>
 	</body>
 
