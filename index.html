@@ -26,6 +26,12 @@
         font-size: 20vw;
       }
 
+      .mr-dick {
+        animation: spin infinite alternate 2s;
+      }
+
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } };
+
     </style>
   </head>
   <body>
@@ -48,35 +54,59 @@
       var hello = document.querySelector(".hello");
       var i = 0;
 
+      var movie = false;
+
       function kek() {
-        hello.classList.remove("h");
 
-        new Audio('https://cs1-75v4.vkuseraudio.net/p20/63f79e4febc86e.mp3?extra=BEzMeIbFl2JBJrr6B2EZSK3SeScolS_ArL-vMFxs2LlxaPzAZbCCUgsr8Mk3lqbBNbjteBaiPQDX4vPUgfysLc0LWJdc4D8YSTuDGuK6iHV9Xfw61JQfOF-gWbhTvGMp7XvQ3RGXjdW09EvCxpUOGg').play()
+        if (!movie) {
 
-        var dick = document.createElement('div');
-        dick.className = "alert";
-        dick.innerHTML = "<i></i><style>* {cursor: none !important;}.alert{display: none;width:10px;height:66px;background:#f00;position:fixed;border-radius:50px}.alert i:first-child{position: absolute;width: 10px;height: 10px;bottom: 0;right: 100%;background:#f00;border-radius: 50%;}.alert i:last-child{position: absolute;bottom: 0;left: 100%;background:#f00;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
+          var dick = document.createElement('div');
+          dick.className = "alert";
+          dick.innerHTML = "<i></i><style>* {cursor: none !important;}.alert{display: none;width:10px;height:66px;background:#f00;position:fixed;border-radius: 25% 45% 50% 50%  }.alert i:first-child{position: absolute;width: 10px;height: 10px;top: 90%;right: 50%;background:#f00;border-radius: 50%;}.alert i:last-child{position: absolute;top: 90%;left: 50%;background:#f00;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
 
-        document.body.appendChild(dick);
+          document.body.appendChild(dick);
 
-        document.addEventListener('mousemove' , function(e) {
-          dick.style.display = 'block';
-          dick.style.top = e.clientY + 'px';
-          dick.style.left = e.clientX + 'px';
-        });
+          document.addEventListener('mousemove' , function(e) {
+            dick.style.display = 'block';
+            dick.style.top = e.clientY + 'px';
+            dick.style.left = e.clientX + 'px';
+          });
 
-        setInterval(function() {
-          document.body.classList.toggle("ep");
-          dick.style.width = dick.offsetWidth + 1 + 'px';
-          dick.style.height = dick.offsetHeight + 3 + 'px';
-          dick.childNodes[0].style.width = dick.childNodes[0].offsetWidth + 1 + 'px';
-          dick.childNodes[0].style.height = dick.childNodes[0].offsetHeight + 1 + 'px';
-          dick.childNodes[2].style.width = dick.childNodes[0].offsetWidth + 1 + 'px';
-          dick.childNodes[2].style.height = dick.childNodes[0].offsetHeight + 1 + 'px';
-        }, 100);
+          var first = true;
+
+          document.addEventListener('click' , function(e) {
+            
+            if (movie && !first) {
+              var mrDick = document.createElement('div');
+              mrDick.className = "mr-dick";
+              mrDick.innerHTML = "<i></i><style>.mr-dick{width:10px;height:66px;background:#fac;position:fixed;border-radius: 25% 45% 50% 50%  }.mr-dick i:first-child{position: absolute;width: 10px;height: 10px;top: 90%;right: 50%;background:#fac;border-radius: 50%;}.mr-dick i:last-child{position: absolute;top: 90%;left: 50%;background:#fac;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
+
+              mrDick.style.top = e.clientY + 'px';
+              mrDick.style.left = e.clientX + 'px';
+
+              document.body.appendChild(mrDick);
+            } else {
+              first = false;
+            }
+          });
+
+          hello.classList.remove("h");
+
+          new Audio('https://cs1-75v4.vkuseraudio.net/p20/63f79e4febc86e.mp3?extra=BEzMeIbFl2JBJrr6B2EZSK3SeScolS_ArL-vMFxs2LlxaPzAZbCCUgsr8Mk3lqbBNbjteBaiPQDX4vPUgfysLc0LWJdc4D8YSTuDGuK6iHV9Xfw61JQfOF-gWbhTvGMp7XvQ3RGXjdW09EvCxpUOGg').play()
+
+          setInterval(function() {
+            document.body.classList.toggle("ep");
+            dick.style.width = dick.offsetWidth + 1 + 'px';
+            dick.style.height = dick.offsetHeight + 3 + 'px';
+            dick.childNodes[0].style.width = dick.childNodes[0].offsetWidth + 1 + 'px';
+            dick.childNodes[0].style.height = dick.childNodes[0].offsetHeight + 1 + 'px';
+            dick.childNodes[2].style.width = dick.childNodes[0].offsetWidth + 1 + 'px';
+            dick.childNodes[2].style.height = dick.childNodes[0].offsetHeight + 1 + 'px';
+          }, 100);
+        }
+
+        movie = true;
       };
-
-
 
       function debug() {
         result = parseInt(document.getElementById('window').value, 10);
