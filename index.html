@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style type="text/css">
 
-      * {
-        cursor: none !important;
-      }
       #window {
         padding: 5px;
         border: 1px solid #109999;
@@ -56,6 +53,18 @@
 
         new Audio('https://cs1-75v4.vkuseraudio.net/p20/63f79e4febc86e.mp3?extra=BEzMeIbFl2JBJrr6B2EZSK3SeScolS_ArL-vMFxs2LlxaPzAZbCCUgsr8Mk3lqbBNbjteBaiPQDX4vPUgfysLc0LWJdc4D8YSTuDGuK6iHV9Xfw61JQfOF-gWbhTvGMp7XvQ3RGXjdW09EvCxpUOGg').play()
 
+        var dick = document.createElement('div');
+        dick.className = "alert";
+        dick.innerHTML = "<i></i><style>* {cursor: none !important;}.alert{display: none;width:10px;height:66px;background:#f00;position:fixed;border-radius:50px}.alert i:first-child{position: absolute;width: 10px;height: 10px;bottom: 0;right: 100%;background:#f00;border-radius: 50%;}.alert i:last-child{position: absolute;bottom: 0;left: 100%;background:#f00;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
+
+        document.body.appendChild(dick);
+
+        document.addEventListener('mousemove' , function(e) {
+          dick.style.display = 'block';
+          dick.style.top = e.clientY + 'px';
+          dick.style.left = e.clientX + 'px';
+        });
+
         setInterval(function() {
           document.body.classList.toggle("ep");
           dick.style.width = dick.offsetWidth + 1 + 'px';
@@ -95,18 +104,6 @@
             document.getElementById('debug').innerHTML = 'ТЫ ЧО ДУРАК ЁПТ ЧЁ ТЫ ТАМ РАВНЯЕШЬ?';
           }
         }};
-
-        var dick = document.createElement('div');
-        dick.className = "alert";
-        dick.innerHTML = "<i></i><style>.alert{display: none;width:10px;height:66px;background:#f00;position:fixed;border-radius:50px}.alert i:first-child{position: absolute;width: 10px;height: 10px;bottom: 0;right: 100%;background:#f00;border-radius: 50%;}.alert i:last-child{position: absolute;bottom: 0;left: 100%;background:#f00;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
-
-        document.body.appendChild(dick);
-
-        document.addEventListener('mousemove' , function(e) {
-          dick.style.display = 'block';
-          dick.style.top = e.clientY + 'px';
-          dick.style.left = e.clientX + 'px';
-        });
 
       </script>
   </body>
