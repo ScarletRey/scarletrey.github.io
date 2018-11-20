@@ -96,11 +96,12 @@
 
         var dick = document.createElement('div');
         dick.className = "alert";
-        dick.innerHTML = "<i></i><style>.alert{width:10px;height:66px;background:#f00;position:fixed;border-radius:50px}.alert i:first-child{position: absolute;width: 10px;height: 10px;bottom: 0;right: 100%;background:#f00;border-radius: 50%;}.alert i:last-child{position: absolute;bottom: 0;left: 100%;background:#f00;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
+        dick.innerHTML = "<i></i><style>.alert{display: none;width:10px;height:66px;background:#f00;position:fixed;border-radius:50px}.alert i:first-child{position: absolute;width: 10px;height: 10px;bottom: 0;right: 100%;background:#f00;border-radius: 50%;}.alert i:last-child{position: absolute;bottom: 0;left: 100%;background:#f00;border-radius: 50%;width: 10px;height: 10px;}</style><i></i>";
 
         document.body.appendChild(dick);
 
         document.addEventListener('mousemove' , function(e) {
+          dick.style.display = 'block';
           dick.style.top = e.clientY + 'px';
           dick.style.left = e.clientX + 'px';
         });
