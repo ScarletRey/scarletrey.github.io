@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+#snowfall {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mr-smith {
+  position: fixed;
+  left: 30%;
+  animation-name: fall;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+.mr-smith span {
+  display: block;
+  width: 26px;
+  height: 55px;
+  background-image: url(./mr-dick.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: roll;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+.title {
+  position: fixed;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 3px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+@keyframes fall {
+  from {
+    bottom: 100%
+  }
+  to {
+    bottom: -10%;
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
