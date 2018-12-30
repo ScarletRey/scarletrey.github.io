@@ -22,8 +22,10 @@ $(document).ready(function() {
   function randomInteger(min, max) {
     var rand = min + Math.random() * (max + 1 - min);
     rand = Math.floor(rand);
-    console.log(rand);
     return rand;
   }
 
+  setTimeout(function() {
+    new Audio('./let_it_snow.mp3').play();
+  }, 100);
 });
