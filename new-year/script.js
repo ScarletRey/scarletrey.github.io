@@ -1,12 +1,25 @@
 $(document).ready(function() {
+  var music = new Audio('./let_it_snow.mp3');
+  var playToggle = false;
+
+  $(document).on('click', '.play', function() {
+    if (!playToggle) {
+      music.play();
+      playToggle = true;
+      $(this).text('Приостановить музыку');
+    } else {
+      music.pause();
+      playToggle = false;
+      $(this).text('Включить музыку');
+    }
+  });
+
   var $container = $('#snowfall');
 
   var timer = setTimeout(function tick() {
     createFlake();
     timer = setTimeout(tick, randomInteger(500, 2000))
   }, randomInteger(500, 2000));
-
-  // setInterval(createFlake, randomInteger(500, 2500));
 
   function createFlake() {
     var randomId = Math.floor(Math.random() * 1e10),
@@ -24,8 +37,4 @@ $(document).ready(function() {
     rand = Math.floor(rand);
     return rand;
   }
-
-  setTimeout(function() {
-    new Audio('./let_it_snow.mp3').play();
-  }, 100);
 });
