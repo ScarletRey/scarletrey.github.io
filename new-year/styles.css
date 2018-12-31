@@ -57,11 +57,12 @@
   width: 100%;
   text-align: center;
   letter-spacing: 3px;
-  top: 10%;
+  top: 5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-shadow: 1px 1px 5px #fff;
 }
 
 .wall {

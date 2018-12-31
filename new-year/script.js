@@ -25,7 +25,7 @@ $(document).ready(function() {
     var randomId = Math.floor(Math.random() * 1e10),
         percent = Math.floor(Math.random() * 100);
 
-    $container.append('<div id="'+randomId+'" class="mr-smith" style="left:'+percent+'%;-webkit-animation-duration: '+randomInteger(7, 15)+'s;animation-duration: '+randomInteger(7, 15)+'s;"><span style="-webkit-animation-duration: '+randomInteger(5, 20)+'s;animation-duration: '+randomInteger(5, 20)+'s;"></span></div>');
+    $container.append('<div id="'+randomId+'" class="mr-smith" style="-webkit-transform: scale(1.'+randomInteger(0, 99)+');-ms-transform: scale(1.'+randomInteger(0, 99)+');transform: scale(1.'+randomInteger(0, 99)+');left:'+percent+'%;-webkit-animation-duration: '+randomInteger(7, 15)+'s;animation-duration: '+randomInteger(7, 15)+'s;"><span style="-webkit-animation-duration: '+randomInteger(5, 20)+'s;animation-duration: '+randomInteger(5, 20)+'s;"></span></div>');
 
     setTimeout(function() {
       $('#'+randomId).remove();
