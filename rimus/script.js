@@ -17,10 +17,28 @@ var app = new Vue({
 				target = new Date(2020, 0, 31);
 			vm.days = new Date(target - current).getDate() - 1;
 			vm.hours = 23 - current.getHours();
-			vm.minutes = 60 - current.getMinutes();
+			vm.minutes = 59 - current.getMinutes();
 			console.log((current.getTime() - from.getTime()) / (target.getTime() - from.getTime()));
 			vm.progress = ((current.getTime() - from.getTime()) / (target.getTime() - from.getTime()) * 100).toFixed(2);
 		}
+	},
+
+	filters: {
+		pluralize: function (number, one, two, five) {
+			number = Math.abs(number);
+			number %= 100;
+			if (number >= 5 && number <= 20) {
+				return five;
+			}
+			number %= 10;
+			if (number === 1) {
+				return one;
+			}
+			if (number >= 2 && number <= 4) {
+				return two;
+			}
+			return five;
+		},
 	},
 
 	mounted: function () {

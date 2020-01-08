@@ -22,11 +22,14 @@
                 <h1>Группа поддержки Римуса</h1>
                 <div class="timer">
                     <div class="text">Приблизительное время на&nbsp;поедание кимчи и&nbsp;соджу:</div>
+                    <div class="anim">
+                        <div class="ball"></div>
+                    </div>
                     <div class="time">
                         <div class="labels">
-                            <div>Дней:</div>
-                            <div>Часов:</div>
-                            <div>Минут:</div>
+                            <div>{{days | pluralize('День', 'Дня', 'Дней')}}:</div>
+                            <div>{{days | pluralize('Час', 'Часа', 'Часов')}}:</div>
+                            <div>{{days | pluralize('Минута', 'Минуты', 'Минут')}}:</div>
                         </div>
                         <div class="values">
                             <div>{{days}}</div>
