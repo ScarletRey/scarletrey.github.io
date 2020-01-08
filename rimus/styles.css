@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.outer {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.inner {
+    max-width: 667px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #111;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.text {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.timer {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.time .labels,
+.time .values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.time .labels div {
+    width: 33.3%;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.time .values div {
+    width: 33.3%;
+    font-size: 28px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.progress {
+    width: 100%;
+    border: 1px solid #fff;
+    height: 50px;
+}
+
+.bar {
+    height: 100%;
+    background-image: url(./bar.png);
+    background-repeat: repeat-x;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+}
