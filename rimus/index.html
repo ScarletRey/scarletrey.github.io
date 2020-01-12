@@ -21,22 +21,26 @@
             <div class="inner" id="app" v-cloak>
                 <h1>Группа поддержки Римуса</h1>
                 <div class="timer">
-                    <div class="text">Приблизительное время на&nbsp;поедание кимчи и&nbsp;соджу:</div>
-                    <div class="anim">
-                        <div class="ball"></div>
-                    </div>
-                    <div class="time">
-                        <div class="labels">
-                            <div>{{days | pluralize('День', 'Дня', 'Дней')}}:</div>
-                            <div>{{hours | pluralize('Час', 'Часа', 'Часов')}}:</div>
-                            <div>{{minutes | pluralize('Минута', 'Минуты', 'Минут')}}:</div>
+                    <div v-if="!isOver">
+                        <div class="text">Приблизительное время на&nbsp;поедание кимчи и&nbsp;соджу:</div>
+                        <div class="text" style="color: #dd0021">Предупреждать надо, тихоня!</div>
+                        <div class="anim">
+                            <div class="ball"></div>
                         </div>
-                        <div class="values">
-                            <div>{{days}}</div>
-                            <div>{{hours}}</div>
-                            <div>{{minutes}}</div>
+                        <div class="time">
+                            <div class="labels">
+                                <div>{{days | pluralize('День', 'Дня', 'Дней')}}:</div>
+                                <div>{{hours | pluralize('Час', 'Часа', 'Часов')}}:</div>
+                                <div>{{minutes | pluralize('Минута', 'Минуты', 'Минут')}}:</div>
+                            </div>
+                            <div class="values">
+                                <div>{{days}}</div>
+                                <div>{{hours}}</div>
+                                <div>{{minutes}}</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="text" v-else>Время собирать свои шмотки и тащиться домой.</div>
                     <div class="text" style="margin-top: 25px">Прогресс в азиатах:</div>
                     <div class="progress">
                         <div class="bar" :style="{width: progress+'%'}"></div>

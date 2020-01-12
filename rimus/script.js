@@ -14,11 +14,15 @@ var app = new Vue({
 			var vm = this;
 			var from = new Date(2019, 11, 1),
 				current = new Date(),
-				target = new Date(2020, 0, 31);
+				target = new Date(2020, 0, 16);
+			if (target < current) {
+				vm.isOver = true;
+				vm.progress = 100;
+				return;
+			}
 			vm.days = new Date(target - current).getDate() - 1;
 			vm.hours = 23 - current.getHours();
 			vm.minutes = 59 - current.getMinutes();
-			console.log((current.getTime() - from.getTime()) / (target.getTime() - from.getTime()));
 			vm.progress = ((current.getTime() - from.getTime()) / (target.getTime() - from.getTime()) * 100).toFixed(2);
 		}
 	},
@@ -44,6 +48,9 @@ var app = new Vue({
 	mounted: function () {
 		var vm = this;
 		this.getRemains();
+		if (this.isOver) {
+			return;
+		}
 		setInterval(function () {
 			vm.getRemains();
 		}, 1000);
